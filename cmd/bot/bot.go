@@ -17,7 +17,6 @@ import (
 
 	log "github.com/Sirupsen/logrus"
 	"github.com/bwmarrin/discordgo"
-	"github.com/dustin/go-humanize"
 	redis "gopkg.in/redis.v3"
 )
 
@@ -191,6 +190,18 @@ var WOW *SoundCollection = &SoundCollection{
 	},
 }
 
+var MANCHEL *SoundCollection = &SoundCollection{
+	Prefix: "manchel",
+	Commands: []string{
+		"!manchel",
+		"!mike",
+	},
+	Sounds: []*Sound{
+		createSound("manchel", 100, 250),
+		createSound("gaymars", 50, 250),
+	},
+}
+
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	AIRHORN,
 	KHALED,
@@ -199,6 +210,7 @@ var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	COW,
 	BIRTHDAY,
 	WOW,
+	MANCHEL,
 }
 
 // Create a Sound struct
