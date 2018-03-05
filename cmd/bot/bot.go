@@ -195,11 +195,40 @@ var MANCHEL *SoundCollection = &SoundCollection{
 	Prefix: "manchel",
 	Commands: []string{
 		"!manchel",
-		"!mike",
+		"!mm",
 	},
 	Sounds: []*Sound{
-		createSound("manchel", 100, 250),
-		createSound("gaymars", 50, 250),
+		createSound("manchel", 200, 250),
+		createSound("newgaymars", 50, 250),
+		createSound("favre", 50, 250),
+		createSound("pissed", 50, 250),
+	},
+}
+
+var MACKEREL *SoundCollection = &SoundCollection{
+	Prefix: "tp",
+	Commands: []string{
+		"!tp",
+		"!df",
+	},
+	Sounds: []*Sound{
+		createSound("tompirelli", 200, 250),
+		createSound("tompirellifull", 50, 250),
+	},
+}
+
+var KH3 *SoundCollection = &SoundCollection{
+	Prefix: "kh",
+	Commands: []string{
+		"!kh",
+	},
+	Sounds: []*Sound{
+		createSound("keybladewar", 50, 250),
+		createSound("keyblademaster", 50, 250),
+		createSound("lightbeatdark", 50, 250),
+		createSound("darkbeatlight", 50, 250),
+		createSound("ohyeah", 50, 250),
+		createSound("mikewazowski", 200, 250),
 	},
 }
 
@@ -212,6 +241,8 @@ var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	BIRTHDAY,
 	WOW,
 	MANCHEL,
+	MACKEREL,
+	KH3,
 }
 
 // Create a Sound struct
