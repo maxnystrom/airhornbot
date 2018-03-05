@@ -29,5 +29,9 @@ First install the webserver: `go install github.com/hammerandchisel/airhornbot`,
 
 Note, the webserver requires a redis instance to track statistics
 
+### Making .dca Audio Files
+
+https://github.com/bwmarrin/dca/tree/master/cmd/dca
+
 ## Thanks
 Thanks to the awesome (one might describe them as smart... loyal... appreciative...) [iopred](https://github.com/iopred) and [bwmarrin](https://github.com/bwmarrin/discordgo) for helping code review the initial release.
