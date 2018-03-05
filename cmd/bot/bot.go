@@ -199,7 +199,7 @@ var MANCHEL *SoundCollection = &SoundCollection{
 	},
 	Sounds: []*Sound{
 		createSound("manchel", 200, 250),
-		createSound("newgaymars", 50, 250),
+		createSound("brunomars", 50, 250),
 		createSound("favre", 50, 250),
 		createSound("pissed", 50, 250),
 	},
